@@ -1,38 +1,76 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
+  font-family: 'Arial', sans-serif;
+  padding: 20px;
+  background-image: url('https://img.freepik.com/free-photo/beach-sunset_1204-83.jpg?t=st=1725767103~exp=1725770703~hmac=40fc580c4e44f35746398b585b54f37bfb5590055e955704d7a6b7575b218c73&w=1060');
+  background-size: cover;
+  background-position: center;
   min-height: 100vh;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  color: #ffffff;
 }
 
-.App-link {
-  color: #61dafb;
+input {
+  padding: 10px;
+  margin-bottom: 20px;
+  width: 100%;
+  max-width: 400px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  margin-top: 10px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+table {
+  text-align: left;
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 16px;
+}
+
+th,
+td {
+  padding: 12px 15px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+th {
+  background-color: rgba(255, 255, 255, 0.1);
+  cursor: pointer;
+  font-weight: 700;
+}
+
+tr:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+@media (max-width: 768px) {
+  th,
+  td {
+    font-size: 14px;
+    padding: 10px;
   }
-  to {
-    transform: rotate(360deg);
-  }
+}
+
+button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #0056b3;
 }
